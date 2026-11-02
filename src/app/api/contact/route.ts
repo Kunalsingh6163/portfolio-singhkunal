@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export const runtime = "nodejs";
-
 const MAX_NAME = 80;
 const MAX_EMAIL = 120;
 const MAX_MESSAGE = 2000;
