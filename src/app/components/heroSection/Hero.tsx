@@ -1,7 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../contants/Texts";
 import Image from "next/image";
-import Link from "next/link";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -62,7 +61,7 @@ function Hero() {
             </Typography>
             <Stack direction={{ xs: "column", sm: "row" }} spacing={2} sx={{ mt: 4 }}>
               <Button
-                component={Link}
+                component="a"
                 href="#projects"
                 variant="contained"
                 endIcon={<ArrowForwardRoundedIcon />}
@@ -70,7 +69,7 @@ function Hero() {
               >
                 View Projects
               </Button>
-              <Button component={Link} href="#contact" variant="outlined" size="large">
+              <Button component="a" href="#contact" variant="outlined" size="large">
                 Contact Me
               </Button>
             </Stack>

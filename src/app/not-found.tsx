@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
@@ -14,7 +13,7 @@ export default function NotFound() {
         <Typography color="text.secondary" sx={{ mb: 4 }}>
           The page you are looking for does not exist or has been moved.
         </Typography>
-        <Button component={Link} href="/" variant="contained" size="large">
+        <Button component="a" href="/" variant="contained" size="large">
           Back to home
         </Button>
       </Container>

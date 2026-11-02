@@ -1,6 +1,5 @@
 import React from "react";
 import { CERTIFICATIONS } from "../contants/Texts";
-import Link from "next/link";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -46,7 +45,7 @@ function Certificate() {
                   </Stack>
                   <Box>
                     <Button
-                      component={Link}
+                      component="a"
                       href={certificate.link}
                       target="_blank"
                       rel="noopener noreferrer"
